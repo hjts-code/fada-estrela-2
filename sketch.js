@@ -32,8 +32,8 @@ function draw(){
     if(keyCode === RIGHT_ARROW){
         fada.x += 4;
     }
-    if(star.x > 470 && starBody.position.y > 470){
-        Matter.Body.setStatic(starBody, true);
+    if(fada.x > 470){
+        Matter.Body.setStatic(starBody, false);
     }
     drawSprites();
 }
